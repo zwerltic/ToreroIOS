@@ -15,8 +15,6 @@ var numberSaved: String!
 var coloniaSaved:String!
 var delegacionSaved:String!
 var juzgadoSaved:String!
-var delegacionesArray = ["Alvaro Obregon","Cuauhtemoc","Coyoacan"]
-var alvaroObregonArray = ["Alv Uno", "Alv Dos", "Alv tres"]
 
 class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -35,7 +33,7 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var pickAzcapotzalco = ["1. Av. de las Culturas y Eje 5 Norte, Col. Unidad El Rosario", "2. Av. 22 de Febrero y Castilla Oriente, Col. Santa Cruz Atoyac"]
     var pickBenito = ["1. Av. División del Norte, Esq. Eje 7 Sur Municipio Libre, Col. Santa Cruz Atoyac", "3. Obrero Mundial y Yacatas, Col. Piedad Narvarte", "5. Bretaña Nº6 y Orinoco, Col. Portales"]
     var pickCoyoacan = ["1. Tecualiapan y Zompantitlan, Col. Romero de Terreros", "3. Apaches y Eje 3 Oriente, Cafetales S/N, Col. San Francisco Culhuacán", "4. Tepalcatzin y Meconetzin, Col. Ajusco Zona Pedregal", "5. Canal Nacional y Laura Méndez Cuenca, Col. CTM Culhuacán"]
-    var pickCuauhtemoc =["1. Lerdo Nº322, Col. San Simón Tolnahúacan", "2. Aldama y Mina, Col. Buenavista", "3. Paseo de la Reforma Nº705, Col. Morelos", "4. Centro de Legalidad y Justicia Paraguay No. 37, Col Centro", "5. Santa María La Rivera Nº 35, Col. Sta. María La Rivera", "8. Plaza Pino Suárez, Colonia Centro"]
+    var pickCuauhtemoc = ["1. Lerdo Nº322, Col. San Simón Tolnahúacan", "2. Aldama y Mina, Col. Buenavista", "3. Paseo de la Reforma Nº705, Col. Morelos", "4. Centro de Legalidad y Justicia Paraguay No. 37, Col Centro", "5. Santa María La Rivera Nº 35, Col. Sta. María La Rivera", "8. Plaza Pino Suárez, Colonia Centro"]
     var pickCuajimalpa = ["1. Castillo Ledón y Cerrada Ramírez, Col. Cuajimalpa de Morelos"]
     var pickGustavo = ["1. Emiliano Zapata y Guadalupe Victoria, Col. Cuautepec Barrion Bajo", "2. Cerrada Sur de los 100 M. S/N entre Vallejo y Eje Central, Col. Vallejo", "4. Vicnete Villada y 5 de Febrero, Col. Aragón la Villa", "5. Av. 416, Esq. Loreto Favela, Col. San Juan de Aragón", "6. Malitzin nº 146 y 148 Esq. Francisco Novo, Col. Aragón la Villa", "8. Av. 661, Entre Av. 606, Col. San Juan de Aragón 6º Sección"]
     var pickIztacalco = ["1. Av. Congreso de la Unión casi Esq. con Av. Coyuya, Col. Santa Anita", "2. Sur 157 y Calle THE, Col. Gabriel Ramos Millán"]
@@ -53,17 +51,18 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var pickerDelegaciones = UIPickerView()
     var pickerJuzgado = UIPickerView()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        selectedDelegacion = pickAlvaro
+        
         pickerDelegaciones.delegate = self
-        pickerDelegaciones.dataSource = self
+        pickerDelegaciones.tag = 1
         delegacionTextField.inputView = pickerDelegaciones
         
         pickerJuzgado.delegate = self
-        pickerJuzgado.dataSource = self
-        delegacionTextField.inputView = pickerJuzgado
+        pickerJuzgado.tag = 2
+        juzgadoTextField.inputView = pickerJuzgado
         
         
         
@@ -84,9 +83,9 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView == pickerDelegaciones {
+        if pickerView.tag == 1 {
             return pickDelegaciones.count
-        } else if pickerView == pickerJuzgado {
+        } else if pickerView.tag == 2 {
             return selectedDelegacion.count
         }
         return 0
@@ -94,16 +93,16 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        if pickerView == pickerDelegaciones {
+        if pickerView.tag == 1 {
             return pickDelegaciones[row]
-        } else if pickerView == pickerJuzgado {
-            return selectedDelegacion[row]
+        } else if pickerView.tag == 2 {
+            return selectedDelegacion[row] as! String
         }
-        return 0
+        return ""
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView == pickerDelegaciones {
+        if pickerView.tag == 1 {
             switch row {
             case 0:
                 selectedDelegacion = pickAlvaro
@@ -143,10 +142,9 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             delegacionTextField.text = pickDelegaciones[row]
             // IMPORTANT reload the data on the item picker
             pickerJuzgado.reloadAllComponents()
-        } else if pickerView == pickerJuzgado {
+        } else if pickerView.tag == 2 {
             // Get the current item
-            var seleccionJuzgado = selectedDelegacion[row]
-            juzgadoTextField.text = seleccionJuzgado as! String
+            juzgadoTextField.text = selectedDelegacion[row] as! String
         }
         
     }
