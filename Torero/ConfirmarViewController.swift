@@ -18,6 +18,7 @@ class ConfirmarViewController: UIViewController {
     @IBOutlet var coloniaLabel : UILabel!
     @IBOutlet var delegacionLabel : UILabel!
     @IBOutlet var juzgadoLabel : UILabel!
+    @IBOutlet var itinerantLabel : UILabel!
     
 
     
@@ -32,6 +33,7 @@ class ConfirmarViewController: UIViewController {
         coloniaLabel.text    = "Colonia    :   " + coloniaSaved
         delegacionLabel.text = "Delegacion :   " + delegacionSaved
         juzgadoLabel.text    = "Juzgado    :   " + juzgadoSaved
+        itinerantLabel.text  = "Itinerante :   " + itineranteSaved
         
         
         

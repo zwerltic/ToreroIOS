@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gaE-d9-mkC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HCO-o3-XZz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -13,24 +13,49 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4P-nf-dNw">
-                                <rect key="frame" x="26" y="88" width="323" height="315"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">ACERCA DE TORERO
-Torero es una empresa dedicada a facilitar el acceso a la justicia a la población ofreciendo el servicio de amparo a los ciudadanos cuyos derechos constitucionales fueron violados por el programa alcoholimetro</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4P-nf-dNw">
+                                <rect key="frame" x="26" y="88" width="323" height="369"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">ACERCA DE TORERO
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Torero es una empresa dedicada a facilitar el acceso a la justicia a la población ofreciendo el servicio de amparo a los ciudadanos cuyos derechos constitucionales fueron violados por el programa alcoholimetro </string>
+                                        <attributes>
+                                            <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teléfono: 5521339356" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPN-ed-qs2">
+                                <rect key="frame" x="26" y="477" width="176" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correo: toreroapp@gmaill.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvz-hL-qFh">
+                                <rect key="frame" x="26" y="527" width="234" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.56862745098039214" green="0.66274509803921566" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="4" title="ACERCA DE" id="acW-dT-cKf">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-17"/>
                     </tabBarItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,11 +70,11 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="j72-cs-mU6">
-                                <rect key="frame" x="57" y="135" width="260" height="437"/>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j72-cs-mU6">
+                                <rect key="frame" x="175" y="114" width="260" height="437"/>
                                 <string key="text">INSTRUCCIONES DE USO 
 1. Envía tus datos y el pago correspondiente. 
 2. Un representante de "Torero" redactará y presentará de inmediato tu amparo. 
@@ -61,15 +86,15 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="INSTRUCCIONES" id="cPa-gy-q4n">
+                    <tabBarItem key="tabBarItem" tag="1" title="INSTRUCCIONES" id="cPa-gy-q4n">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-17"/>
                     </tabBarItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741.5" y="391.5"/>
+            <point key="canvasLocation" x="813" y="351"/>
         </scene>
         <!--Ingresa tus datos-->
         <scene sceneID="JjD-n4-CvW">
@@ -80,7 +105,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <viewControllerLayoutGuide type="bottom" id="TWY-d8-ecE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CdA-Hy-YHK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qsN-Hl-pG7">
@@ -145,6 +170,12 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Itinerante" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32F-rg-dIz">
+                                <rect key="frame" x="45" y="471" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delegación" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBJ-or-ynL">
                                 <rect key="frame" x="45" y="343" width="86" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -181,6 +212,11 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-41-Bpb">
+                                <rect key="frame" x="137" y="468" width="184" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -188,10 +224,10 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-17"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="INGRESA TUS DATOS" id="ecZ-XF-yE4"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="coloniaTextField" destination="qsN-Hl-pG7" id="wzE-sG-Ch1"/>
                         <outlet property="delegacionTextField" destination="80P-Zy-XL0" id="Inf-Yg-ZqD"/>
+                        <outlet property="itineranteTextField" destination="hbs-41-Bpb" id="BBA-Xl-0Rn"/>
                         <outlet property="juzgadoTextField" destination="q12-R2-j4s" id="e3L-bU-MWz"/>
                         <outlet property="lastTextField" destination="Qw4-HU-N5J" id="3DG-hA-lkx"/>
                         <outlet property="nameTextField" destination="Z3e-Ec-lgc" id="xni-ee-9Qt"/>
@@ -201,30 +237,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rr2-CH-Sg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741.5" y="1194.5"/>
-        </scene>
-        <!--SOLICITA-->
-        <scene sceneID="LnB-BU-WQs">
-            <objects>
-                <navigationController id="gaE-d9-mkC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SOLICITA" id="5fB-TI-0Rv">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-17"/>
-                    </tabBarItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="39w-lm-UZw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kJm-kd-NLR">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="49e-Tb-3d3" kind="relationship" relationship="rootViewController" id="Onu-11-r4q"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b1i-JW-vTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-352.5" y="391.5"/>
+            <point key="canvasLocation" x="529" y="1188"/>
         </scene>
         <!--CONFIRMAR-->
         <scene sceneID="Xlu-I3-epa">
@@ -235,7 +248,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <viewControllerLayoutGuide type="bottom" id="Mcw-bT-bAP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="F1E-HU-04m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apellido" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rQ-GC-0Fg">
@@ -281,7 +294,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Juzgado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-Gs-E2s">
-                                <rect key="frame" x="59" y="467" width="66" height="21"/>
+                                <rect key="frame" x="59" y="431" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -301,13 +314,19 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                     <segue destination="ujN-0F-hxC" kind="show" id="A7F-7w-8xN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Itinerante" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qs-Pr-msH">
+                                <rect key="frame" x="59" y="472" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="coloniaLabel" destination="Akb-A3-pTU" id="9NQ-oW-K2t"/>
                         <outlet property="delegacionLabel" destination="rfH-Nq-vt2" id="h4C-85-qJg"/>
+                        <outlet property="itinerantLabel" destination="3Qs-Pr-msH" id="vS4-h5-40Y"/>
                         <outlet property="juzgadoLabel" destination="i9j-Gs-E2s" id="csA-KL-npO"/>
                         <outlet property="lastLabel" destination="2rQ-GC-0Fg" id="0PG-Z3-MFe"/>
                         <outlet property="nameLabel" destination="8K9-aP-l1V" id="zTH-6Y-jv0"/>
@@ -328,17 +347,17 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <viewControllerLayoutGuide type="bottom" id="VFR-1m-Rcn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="trT-DQ-kOY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Términos y Condiciones de Uso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj9-x2-wmA">
-                                <rect key="frame" x="49" y="83" width="245" height="21"/>
+                                <rect key="frame" x="23" y="84" width="245" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRn-Qd-Yu9">
-                                <rect key="frame" x="67" y="125" width="254" height="184"/>
+                                <rect key="frame" x="67" y="113" width="254" height="155"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">  Términos y Condiciones de Uso
 I. Normas Generales.
@@ -366,8 +385,23 @@ V. Exención de la Responsabilidad.
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osm-ud-jKv">
+                                <rect key="frame" x="154" y="580" width="66" height="30"/>
+                                <state key="normal" title="ACEPTO">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dI1-rJ-BfQ" kind="show" id="Nua-fN-rUW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aviso de Privacidad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJV-uk-uFr">
+                                <rect key="frame" x="23" y="323" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2Y-B1-E5G">
-                                <rect key="frame" x="67" y="390" width="240" height="128"/>
+                                <rect key="frame" x="67" y="373" width="254" height="155"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Aviso de Privacidad
 Torero, con domicilio en Céfiro 120, torre 3, depto 201, colonia Pedregal de Carrasco, Delegación Coyoacán, CP. 04700, Distrito Federal, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:
@@ -393,29 +427,13 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osm-ud-jKv">
-                                <rect key="frame" x="154" y="580" width="66" height="30"/>
-                                <state key="normal" title="ACEPTO">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dI1-rJ-BfQ" kind="show" id="Nua-fN-rUW"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aviso de Privacidad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJV-uk-uFr">
-                                <rect key="frame" x="49" y="344" width="152" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBf-xs-db1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1693.5" y="1194.5"/>
+            <point key="canvasLocation" x="1877" y="1188"/>
         </scene>
         <!--PAGAR-->
         <scene sceneID="OPJ-uy-1dk">
@@ -426,7 +444,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                         <viewControllerLayoutGuide type="bottom" id="DUn-gb-q9O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3cZ-jA-rou">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Número de la Tarjeta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuC-WM-S8w">
@@ -484,13 +502,20 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="tokenizeCard:" destination="dI1-rJ-BfQ" eventType="touchUpInside" id="jTG-la-g5w"/>
                                     <segue destination="McJ-aZ-cBl" kind="show" id="9Tz-Hv-91z"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ccField" destination="wSL-Ij-4Ii" id="Ish-Tg-CvI"/>
+                        <outlet property="expMonthField" destination="zRu-YF-okI" id="Gc5-4F-pep"/>
+                        <outlet property="expYearField" destination="TO2-gk-V8B" id="JMt-ql-sw2"/>
+                        <outlet property="nameField" destination="dDH-Ue-uL4" id="DQb-do-ZRV"/>
+                        <outlet property="numberField" destination="1jV-h6-zsa" id="0Hs-ar-6Mo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3NG-1z-b65" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -505,34 +530,47 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                         <viewControllerLayoutGuide type="bottom" id="c11-7h-QxS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x0j-VP-MvS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaH-bx-O9B">
-                                <rect key="frame" x="184" y="649" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27S-OP-Lz9">
-                                <rect key="frame" x="166" y="588" width="43" height="30"/>
-                                <state key="normal" title="SALIR">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tu pago fue realizado con exito! Enseguida un representante de torero presentara tu amparo ante la autoridad competente." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HEf-Tf-vlV">
                                 <rect key="frame" x="86" y="99" width="203" height="147"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27S-OP-Lz9">
+                                <rect key="frame" x="279" y="468" width="43" height="67"/>
+                                <state key="normal" title="SALIR">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HCO-o3-XZz" kind="show" id="Fzc-P0-1Ti"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYx-Ut-jFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1228.5" y="2038.5"/>
+            <point key="canvasLocation" x="-1371" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hp7-vY-jkF">
+            <objects>
+                <navigationController id="HCO-o3-XZz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JWJ-q2-Kl7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="relationship" relationship="rootViewController" id="mdp-fz-BZA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anb-fZ-TUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1059" y="367"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -540,7 +578,6 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="2F1-Wc-FPn"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -548,13 +585,13 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="uiM-kN-DLf" kind="relationship" relationship="viewControllers" id="1E3-8E-5uc"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="Ujg-by-LQa"/>
+                        <segue destination="uiM-kN-DLf" kind="relationship" relationship="viewControllers" id="Qg3-t9-fU0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92.5" y="391.5"/>
+            <point key="canvasLocation" x="-64" y="407"/>
         </scene>
     </scenes>
 </document>

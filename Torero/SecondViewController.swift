@@ -12,10 +12,10 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let yourImage = UIImage(named: "Pantalla2.png")
-        let imageview = UIImageView(image: yourImage)
-        self.view.addSubview(imageview)
-        view.sendSubviewToBack(imageview)
+//        let yourImage = UIImage(named: "Pantalla2.png")
+//        let imageview = UIImageView(image: yourImage)
+//        self.view.addSubview(imageview)
+//        view.sendSubviewToBack(imageview)
         // Do any additional setup after loading the view, typically from a nib.
     }
     

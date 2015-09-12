@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		822A36F21B95F46800717000 /* Pantalla1.png in Resources */ = {isa = PBXBuildFile; fileRef = 822A36F11B95F46800717000 /* Pantalla1.png */; };
 		822A36F41B95F49000717000 /* Pantalla2.png in Resources */ = {isa = PBXBuildFile; fileRef = 822A36F31B95F49000717000 /* Pantalla2.png */; };
+		823CB98E1BA3B06D00A54990 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823CB98A1BA3B06D00A54990 /* Card.swift */; };
+		823CB98F1BA3B06D00A54990 /* Conekta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823CB98B1BA3B06D00A54990 /* Conekta.swift */; };
+		823CB9901BA3B06D00A54990 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823CB98C1BA3B06D00A54990 /* Connection.swift */; };
+		823CB9911BA3B06D00A54990 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823CB98D1BA3B06D00A54990 /* Token.swift */; };
+		823CB9951BA3B3C400A54990 /* libDeviceCollectorLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 823CB9941BA3B3C400A54990 /* libDeviceCollectorLibrary.a */; };
+		823CB9971BA3B8CE00A54990 /* rsz_pantalla2.png in Resources */ = {isa = PBXBuildFile; fileRef = 823CB9961BA3B8CE00A54990 /* rsz_pantalla2.png */; };
+		823CB9991BA3B8D800A54990 /* rsz_1pantalla1.png in Resources */ = {isa = PBXBuildFile; fileRef = 823CB9981BA3B8D800A54990 /* rsz_1pantalla1.png */; };
 		82A983871B75A6DF00A2D028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A983861B75A6DF00A2D028 /* AppDelegate.swift */; };
 		82A983891B75A6DF00A2D028 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A983881B75A6DF00A2D028 /* FirstViewController.swift */; };
 		82A9838B1B75A6DF00A2D028 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9838A1B75A6DF00A2D028 /* SecondViewController.swift */; };
@@ -35,6 +42,15 @@
 /* Begin PBXFileReference section */
 		822A36F11B95F46800717000 /* Pantalla1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pantalla1.png; path = ../../../../Downloads/Archivar/Pantalla1/Pantalla1/Pantalla1.png; sourceTree = "<group>"; };
 		822A36F31B95F49000717000 /* Pantalla2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pantalla2.png; path = ../../../../Downloads/Archivar/Pantalla2/Pantalla2.png; sourceTree = "<group>"; };
+		823CB98A1BA3B06D00A54990 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = "../../../Downloads/conekta-ios-master/Conekta-SDK/Card.swift"; sourceTree = "<group>"; };
+		823CB98B1BA3B06D00A54990 /* Conekta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Conekta.swift; path = "../../../Downloads/conekta-ios-master/Conekta-SDK/Conekta.swift"; sourceTree = "<group>"; };
+		823CB98C1BA3B06D00A54990 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = "../../../Downloads/conekta-ios-master/Conekta-SDK/Connection.swift"; sourceTree = "<group>"; };
+		823CB98D1BA3B06D00A54990 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Token.swift; path = "../../../Downloads/conekta-ios-master/Conekta-SDK/Token.swift"; sourceTree = "<group>"; };
+		823CB9921BA3B3C400A54990 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../../../Downloads/conekta-ios-master/Conekta-SDK/Bridging-Header.h"; sourceTree = "<group>"; };
+		823CB9931BA3B3C400A54990 /* DeviceCollectorSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceCollectorSDK.h; path = "../../../Downloads/conekta-ios-master/Conekta-SDK/DeviceCollectorSDK.h"; sourceTree = "<group>"; };
+		823CB9941BA3B3C400A54990 /* libDeviceCollectorLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDeviceCollectorLibrary.a; path = "../../../Downloads/conekta-ios-master/Conekta-SDK/libDeviceCollectorLibrary.a"; sourceTree = "<group>"; };
+		823CB9961BA3B8CE00A54990 /* rsz_pantalla2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rsz_pantalla2.png; path = ../../../../Downloads/rsz_pantalla2.png; sourceTree = "<group>"; };
+		823CB9981BA3B8D800A54990 /* rsz_1pantalla1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rsz_1pantalla1.png; path = ../../../../Downloads/rsz_1pantalla1.png; sourceTree = "<group>"; };
 		82A983811B75A6DF00A2D028 /* Torero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A983851B75A6DF00A2D028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82A983861B75A6DF00A2D028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823CB9951BA3B3C400A54990 /* libDeviceCollectorLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +90,13 @@
 		82A983781B75A6DF00A2D028 = {
 			isa = PBXGroup;
 			children = (
+				823CB98A1BA3B06D00A54990 /* Card.swift */,
+				823CB98B1BA3B06D00A54990 /* Conekta.swift */,
+				823CB9921BA3B3C400A54990 /* Bridging-Header.h */,
+				823CB9931BA3B3C400A54990 /* DeviceCollectorSDK.h */,
+				823CB9941BA3B3C400A54990 /* libDeviceCollectorLibrary.a */,
+				823CB98C1BA3B06D00A54990 /* Connection.swift */,
+				823CB98D1BA3B06D00A54990 /* Token.swift */,
 				82A983831B75A6DF00A2D028 /* Torero */,
 				82A9839B1B75A6DF00A2D028 /* ToreroTests */,
 				82A983821B75A6DF00A2D028 /* Products */,
@@ -110,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				822A36F31B95F49000717000 /* Pantalla2.png */,
+				823CB9961BA3B8CE00A54990 /* rsz_pantalla2.png */,
+				823CB9981BA3B8D800A54990 /* rsz_1pantalla1.png */,
 				822A36F11B95F46800717000 /* Pantalla1.png */,
 				82A983851B75A6DF00A2D028 /* Info.plist */,
 			);
@@ -214,10 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A9838E1B75A6DF00A2D028 /* Main.storyboard in Resources */,
+				823CB9971BA3B8CE00A54990 /* rsz_pantalla2.png in Resources */,
 				82A983931B75A6DF00A2D028 /* LaunchScreen.xib in Resources */,
 				822A36F21B95F46800717000 /* Pantalla1.png in Resources */,
 				822A36F41B95F49000717000 /* Pantalla2.png in Resources */,
 				82A983901B75A6DF00A2D028 /* Images.xcassets in Resources */,
+				823CB9991BA3B8D800A54990 /* rsz_1pantalla1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +270,10 @@
 				82A983AD1B75F55600A2D028 /* AceptarViewController.swift in Sources */,
 				82A983891B75A6DF00A2D028 /* FirstViewController.swift in Sources */,
 				82A983AB1B75F53200A2D028 /* ConfirmarViewController.swift in Sources */,
+				823CB9911BA3B06D00A54990 /* Token.swift in Sources */,
+				823CB9901BA3B06D00A54990 /* Connection.swift in Sources */,
+				823CB98E1BA3B06D00A54990 /* Card.swift in Sources */,
+				823CB98F1BA3B06D00A54990 /* Conekta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +403,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Torero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jose/Downloads/conekta-ios-master/Conekta-SDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jose/Downloads/conekta-ios-master/Conekta-SDK/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,7 +420,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Torero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jose/Downloads/conekta-ios-master/Conekta-SDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jose/Downloads/conekta-ios-master/Conekta-SDK/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

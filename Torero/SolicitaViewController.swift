@@ -15,6 +15,7 @@ var numberSaved: String!
 var coloniaSaved:String!
 var delegacionSaved:String!
 var juzgadoSaved:String!
+var itineranteSaved: String!
 
 class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -25,10 +26,12 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet var coloniaTextField : UITextField!
     @IBOutlet var delegacionTextField: UITextField!
     @IBOutlet var juzgadoTextField: UITextField!
+    @IBOutlet var itineranteTextField: UITextField!
     
     
    
     var pickDelegaciones = ["Álvaro Obregón", "Azcapotzalco", "Benito Juárez", "Coyoacán", "Cuauhtémoc", "Cuajimalpa", "Gustavo A. Madero", "Iztacalco", "Iztapalapa", "Magdalena Contreras", "Miguel Hidalgo", "Milpa Alta", "Tláhuac", "Tlalpan", "Venustiano Carranza", "Xochimilco"]
+    var pickItinerantes = ["Grupo 1, Juez: Lic. Luis Brugada Yañez", "Grupo 2, Juez: Lic Fernando Alberto Vilchis Leija", "Grupo 3, Juez: Lic. Yajseel Yadira Beltrán Navarro", "Grupo 4, Juez: Lic. César Omar Rico Morales", "Grupo 5, Juez: Lic. Daniel Acosta Sánchez", "Grupo 6, Juez: Lic. José Daniel Pérez Martínez", "Grupo 7, Juez: Lic. Pablo Cesar Pérez Mondragon"]
     var pickAlvaro = ["1. Escuadrón 201 Esq. Batallón de San Patricion S/N Col. Cristo Rey", "2. Camino Real de Toluca S/N entre paralela 2 y 3, Col. José María", "3. Tlaxcala y Av. México, Col. Progreso"]
     var pickAzcapotzalco = ["1. Av. de las Culturas y Eje 5 Norte, Col. Unidad El Rosario", "2. Av. 22 de Febrero y Castilla Oriente, Col. Santa Cruz Atoyac"]
     var pickBenito = ["1. Av. División del Norte, Esq. Eje 7 Sur Municipio Libre, Col. Santa Cruz Atoyac", "3. Obrero Mundial y Yacatas, Col. Piedad Narvarte", "5. Bretaña Nº6 y Orinoco, Col. Portales"]
@@ -50,6 +53,8 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var selectedDelegacion = []
     var pickerDelegaciones = UIPickerView()
     var pickerJuzgado = UIPickerView()
+    var pickerItinerante = UIPickerView()
+    
     
     
     override func viewDidLoad() {
@@ -64,9 +69,21 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         pickerJuzgado.tag = 2
         juzgadoTextField.inputView = pickerJuzgado
         
+        pickerItinerante.delegate = self
+        pickerItinerante.tag = 3
+        itineranteTextField.inputView = pickerItinerante
+        
         
         
     }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        if let touch = touches.first as? UITouch {
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches , withEvent:event)
+    }
+    
     
     override func viewDidAppear(animated: Bool) {
         
@@ -87,6 +104,8 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             return pickDelegaciones.count
         } else if pickerView.tag == 2 {
             return selectedDelegacion.count
+        } else if pickerView.tag == 3 {
+            return pickItinerantes.count
         }
         return 0
         
@@ -97,6 +116,8 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             return pickDelegaciones[row]
         } else if pickerView.tag == 2 {
             return selectedDelegacion[row] as! String
+        } else if pickerView.tag == 3 {
+            return pickItinerantes[row]
         }
         return ""
     }
@@ -145,9 +166,15 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         } else if pickerView.tag == 2 {
             // Get the current item
             juzgadoTextField.text = selectedDelegacion[row] as! String
+        } else if pickerView.tag == 3 {
+            itineranteTextField.text = pickItinerantes[row]
         }
         
     }
+    
+    
+
+    
     
     
     override func prepareForSegue(segue: UIStoryboardSegue,
@@ -160,6 +187,7 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             coloniaSaved = coloniaTextField.text;
             delegacionSaved = delegacionTextField.text;
             juzgadoSaved = juzgadoTextField.text;
+            itineranteSaved = itineranteTextField.text;
         
     }
    

@@ -10,31 +10,31 @@
 	<string>Torero</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>A9DE78F5C579097E2EF5D8E3151DCFB7C9E747DC</key>
+		<key>3935A470C7BA8B4E690431F1C1E367481B03CA70</key>
 		<string>https://github.com/zwerltic/ToreroIOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Torero/Torero.xcodeproj</string>
+	<string>Torero.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>A9DE78F5C579097E2EF5D8E3151DCFB7C9E747DC</key>
-		<string>../../..</string>
+		<key>3935A470C7BA8B4E690431F1C1E367481B03CA70</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zwerltic/ToreroIOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A9DE78F5C579097E2EF5D8E3151DCFB7C9E747DC</string>
+	<string>3935A470C7BA8B4E690431F1C1E367481B03CA70</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A9DE78F5C579097E2EF5D8E3151DCFB7C9E747DC</string>
+			<string>3935A470C7BA8B4E690431F1C1E367481B03CA70</string>
 			<key>IDESourceControlWCCName</key>
-			<string>untitled%20folder</string>
+			<string>Torero</string>
 		</dict>
 	</array>
 </dict>
