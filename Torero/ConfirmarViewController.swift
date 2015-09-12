@@ -40,11 +40,23 @@ class ConfirmarViewController: UIViewController {
         
     }
     
+    @IBAction func changeSavedValues(sender: AnyObject) {
+        nameSaved = "&name=" + nameSaved
+        lastSaved = "&last=" + lastSaved
+        streetSaved = "&street=" + streetSaved
+        numberSaved = "&number=" + numberSaved
+        coloniaSaved = "&colonia=" + coloniaSaved
+        delegacionSaved = "&deleg=" + delegacionSaved
+        juzgadoSaved = "&juzgado=" + juzgadoSaved
+        itineranteSaved = "&itinerante=" + itineranteSaved
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
     
 }
