@@ -15,6 +15,7 @@ class PagarViewController: UIViewController {
     @IBOutlet var expMonthField: UITextField!;
     @IBOutlet var expYearField: UITextField!;
     @IBOutlet var ccField: UITextField!;
+    @IBOutlet var buttonPagar: UIButton!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,11 @@ class PagarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        buttonPagar.setTitle("Pagar", forState: .Normal)
+        buttonPagar.enabled = true
+    }
+    
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         if let touch = touches.first as? UITouch {
             view.endEditing(true)
@@ -34,6 +40,9 @@ class PagarViewController: UIViewController {
     }
     
     @IBAction func tokenizeCard(sender : AnyObject) {
+        buttonPagar.setTitle("Cargando . . .", forState: .Normal)
+        buttonPagar.enabled = false
+        
         var conekta = Conekta(publicKey: "key_EfsX62HbiTSNsuHr5q6xv2Q")
         
         //var tarjeta = Card(last4: numberField.text, name: nameField.text, cvc: ccField.text, exp_month: expMonthField.text, exp_year: expYearField.text)
@@ -43,11 +52,12 @@ class PagarViewController: UIViewController {
         conekta.createToken(tarjeta, withSuccess: { (data) -> Void in
             println("Success:")
             println(data)
-           // var dataString:String = data.TokenID as! String
+            var token = data["id"] as! String!
             let request = NSMutableURLRequest(URL: NSURL(string: "http://torero-tlacuilo.rhcloud.com/api/charge")!)
             request.HTTPMethod = "POST"
             
-            let postString = postInfo
+            let postString = "token=" + token + postInfo
+            println(postString)
             request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
             let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
                 data, response, error in

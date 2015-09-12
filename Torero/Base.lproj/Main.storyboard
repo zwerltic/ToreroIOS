@@ -32,16 +32,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4P-nf-dNw">
-                                <rect key="frame" x="26" y="120" width="548" height="316"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JsE-TU-DE4">
+                                <rect key="frame" x="200" y="120" width="201" height="320"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">ACERCA DE TORERO
 Torero es una empresa dedicada a facilitar el acceso a la justicia a la población ofreciendo el servicio de amparo a los ciudadanos cuyos derechos constitucionales fueron violados por el programa alcoholimetro </string>
                                         <attributes>
-                                            <font key="NSFont" size="19" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -50,57 +49,34 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         </subviews>
                         <color key="backgroundColor" red="0.56862745098039214" green="0.66274509803921566" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="zPN-ed-qs2" firstAttribute="top" secondItem="u4P-nf-dNw" secondAttribute="bottom" constant="8" id="33n-zv-QzS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="u4P-nf-dNw" secondAttribute="trailing" constant="15" id="3jC-ac-6bC"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="top" secondItem="zPN-ed-qs2" secondAttribute="bottom" constant="20" id="4kB-tI-U9J"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="centerX" secondItem="4ly-Hr-9NF" secondAttribute="centerX" id="8O7-8c-hOM"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="15" id="9Ax-Jo-SEn"/>
-                            <constraint firstAttribute="centerX" secondItem="u4P-nf-dNw" secondAttribute="centerX" id="FSs-ui-3iO"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="FsA-DO-Oui"/>
+                            <constraint firstItem="4ly-Hr-9NF" firstAttribute="centerX" secondItem="JsE-TU-DE4" secondAttribute="centerX" id="4nh-dS-n0m"/>
+                            <constraint firstItem="JsE-TU-DE4" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="Act-9Q-JM9"/>
+                            <constraint firstItem="zPN-ed-qs2" firstAttribute="top" secondItem="JsE-TU-DE4" secondAttribute="bottom" constant="17" id="DkE-IZ-4LA"/>
+                            <constraint firstItem="JsE-TU-DE4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="FSM-3p-diR"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="yvz-hL-qFh" secondAttribute="bottom" constant="8" id="Hxn-bf-ZGQ"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="IAd-MH-qhz"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="leading" secondItem="zPN-ed-qs2" secondAttribute="trailing" constant="156" id="IQb-99-1k5"/>
-                            <constraint firstAttribute="centerX" secondItem="u4P-nf-dNw" secondAttribute="centerX" id="Ist-ui-yP5"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="JYZ-0f-46P"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="LOI-ej-yhT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="u4P-nf-dNw" secondAttribute="trailing" constant="15" id="N1I-6R-fdP"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="15" id="NKU-Ft-JHL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="u4P-nf-dNw" secondAttribute="trailing" constant="15" id="O4c-yZ-hLv"/>
                             <constraint firstItem="zPN-ed-qs2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="OTV-eL-9pp"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="centerX" secondItem="4ly-Hr-9NF" secondAttribute="centerX" id="Ocp-HQ-11X"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="WEM-5o-9c4"/>
-                            <constraint firstAttribute="centerX" secondItem="u4P-nf-dNw" secondAttribute="centerX" id="erT-wy-L91"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="fXQ-ZV-sWu"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="jqa-fc-lP3"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" id="l0R-Vk-Xfh"/>
+                            <constraint firstAttribute="trailing" secondItem="4ly-Hr-9NF" secondAttribute="trailing" id="S0J-L7-tP2"/>
+                            <constraint firstItem="4ly-Hr-9NF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cds-tc-L9o"/>
+                            <constraint firstItem="4ly-Hr-9NF" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="jId-ux-BkJ"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="yvz-hL-qFh" secondAttribute="bottom" constant="32" id="mGd-MR-nQi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="u4P-nf-dNw" secondAttribute="trailing" constant="122" id="po0-qi-giy"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="top" secondItem="zPN-ed-qs2" secondAttribute="bottom" constant="33" id="rLu-5f-NtB"/>
-                            <constraint firstItem="u4P-nf-dNw" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="123" id="v5L-ED-MFR"/>
+                            <constraint firstItem="JsE-TU-DE4" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="ssb-kX-Stc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4ly-Hr-9NF" secondAttribute="trailing" id="xuf-q9-lE5"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="xyd-bk-Lc5"/>
-                            <constraint firstAttribute="centerX" secondItem="u4P-nf-dNw" secondAttribute="centerX" id="yWS-rq-5GW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="3jC-ac-6bC"/>
-                                <exclude reference="8O7-8c-hOM"/>
-                                <exclude reference="9Ax-Jo-SEn"/>
-                                <exclude reference="FSs-ui-3iO"/>
-                                <exclude reference="FsA-DO-Oui"/>
-                                <exclude reference="Ist-ui-yP5"/>
-                                <exclude reference="N1I-6R-fdP"/>
-                                <exclude reference="NKU-Ft-JHL"/>
-                                <exclude reference="O4c-yZ-hLv"/>
-                                <exclude reference="WEM-5o-9c4"/>
-                                <exclude reference="erT-wy-L91"/>
-                                <exclude reference="fXQ-ZV-sWu"/>
-                                <exclude reference="jqa-fc-lP3"/>
-                                <exclude reference="l0R-Vk-Xfh"/>
-                                <exclude reference="po0-qi-giy"/>
-                                <exclude reference="v5L-ED-MFR"/>
-                                <exclude reference="yWS-rq-5GW"/>
-                                <exclude reference="33n-zv-QzS"/>
+                                <exclude reference="IAd-MH-qhz"/>
+                                <exclude reference="xuf-q9-lE5"/>
+                                <exclude reference="xyd-bk-Lc5"/>
+                                <exclude reference="Act-9Q-JM9"/>
+                                <exclude reference="FSM-3p-diR"/>
+                                <exclude reference="DkE-IZ-4LA"/>
                                 <exclude reference="IQb-99-1k5"/>
                                 <exclude reference="JYZ-0f-46P"/>
                                 <exclude reference="rLu-5f-NtB"/>
@@ -147,11 +123,22 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <color key="backgroundColor" red="0.56862745100000001" green="0.66274509800000003" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="j72-cs-mU6" secondAttribute="centerX" id="1v5-3R-apc"/>
+                            <constraint firstAttribute="trailing" secondItem="JWb-RG-Y8U" secondAttribute="trailing" id="DB0-G5-h0y"/>
                             <constraint firstItem="j72-cs-mU6" firstAttribute="top" secondItem="JWb-RG-Y8U" secondAttribute="bottom" constant="8" id="FJd-FD-JaT"/>
                             <constraint firstItem="JWb-RG-Y8U" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-16" id="P3b-aI-hx6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JWb-RG-Y8U" secondAttribute="trailing" constant="-16" id="SFM-1z-6Uq"/>
+                            <constraint firstItem="JWb-RG-Y8U" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="TJ3-0p-WAk"/>
+                            <constraint firstItem="JWb-RG-Y8U" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="iQC-i2-VzT"/>
                             <constraint firstItem="JWb-RG-Y8U" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="lNO-lt-Uwx"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="P3b-aI-hx6"/>
+                                <exclude reference="SFM-1z-6Uq"/>
+                                <exclude reference="lNO-lt-Uwx"/>
+                                <exclude reference="FJd-FD-JaT"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="INSTRUCCIONES" id="cPa-gy-q4n">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-17"/>
@@ -728,6 +715,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="buttonPagar" destination="MA1-nv-SXU" id="3OP-HM-48f"/>
                         <outlet property="ccField" destination="wSL-Ij-4Ii" id="Ish-Tg-CvI"/>
                         <outlet property="expMonthField" destination="zRu-YF-okI" id="Gc5-4F-pep"/>
                         <outlet property="expYearField" destination="TO2-gk-V8B" id="JMt-ql-sw2"/>
