@@ -66,7 +66,8 @@ class PagarViewController: UIViewController {
                     println("error=\(error)")
                     var alert = UIAlertController(title:"Hubo un error", message: "Intentalo de Nuevo", preferredStyle: UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
-                        
+                        self.buttonPagar.setTitle("Pagar", forState: .Normal)
+                        self.buttonPagar.enabled = true
                         
                     }))
                     self.presentViewController(alert, animated: true, completion: nil)
@@ -77,24 +78,39 @@ class PagarViewController: UIViewController {
                 
                 let responseString = NSString(data: data, encoding: NSUTF8StringEncoding)
                 println("responseString = \(responseString)")
-                var alert = UIAlertController(title:"Pago", message: "Tu pago ha sido exitoso", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
-                    self.performSegueWithIdentifier("goToGracias", sender: sender)
+                if responseString as! String == "Success" {
+                    var alert = UIAlertController(title:"Pago", message: "Tu pago ha sido exitoso", preferredStyle: UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
+                    NSOperationQueue.mainQueue().addOperationWithBlock {
+                        self.performSegueWithIdentifier("goToGracias", sender: self)
+                    }
                    
-                }))
-                self.presentViewController(alert, animated: true, completion: nil)
+                    }))
+                    self.presentViewController(alert, animated: true, completion: nil)
+                } else {
+                    var alert = UIAlertController(title:"Pago", message: "Tu pago ha fallado", preferredStyle: UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
+                        self.buttonPagar.setTitle("Pagar", forState: .Normal)
+                        self.buttonPagar.enabled = true
+                    }))
+                    self.presentViewController(alert, animated: true, completion: nil)
+                }
             }
             task.resume()
-            }, withFailure: { (error) -> Void in
+        }, withFailure: { (error) -> Void in
                 println("Failure:")
                 var alert = UIAlertController(title:"Error", message: "Intentalo de Nuevo", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
-                   
+                    self.buttonPagar.setTitle("Pagar", forState: .Normal)
+                    self.buttonPagar.enabled = true
+                    
                     
                 }))
                 self.presentViewController(alert, animated: true, completion: nil)
+                
                 println(error)
         })
+        
         
     }
     

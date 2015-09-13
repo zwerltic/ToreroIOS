@@ -20,7 +20,7 @@
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Correo: toreroapp@gmaill.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvz-hL-qFh">
                                 <rect key="frame" x="16" y="498" width="236" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rsz_1pantalla1.png" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-Hr-9NF">
@@ -29,11 +29,11 @@
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Teléfono: 5521339356" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPN-ed-qs2">
                                 <rect key="frame" x="16" y="457" width="176" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JsE-TU-DE4">
-                                <rect key="frame" x="200" y="120" width="201" height="320"/>
+                                <rect key="frame" x="193" y="120" width="214" height="271"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">ACERCA DE TORERO
@@ -52,6 +52,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="top" secondItem="zPN-ed-qs2" secondAttribute="bottom" constant="20" id="4kB-tI-U9J"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="centerX" secondItem="JsE-TU-DE4" secondAttribute="centerX" id="4nh-dS-n0m"/>
                             <constraint firstItem="JsE-TU-DE4" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="Act-9Q-JM9"/>
+                            <constraint firstItem="JsE-TU-DE4" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="CEZ-7O-SIq"/>
                             <constraint firstItem="zPN-ed-qs2" firstAttribute="top" secondItem="JsE-TU-DE4" secondAttribute="bottom" constant="17" id="DkE-IZ-4LA"/>
                             <constraint firstItem="JsE-TU-DE4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="FSM-3p-diR"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="yvz-hL-qFh" secondAttribute="bottom" constant="8" id="Hxn-bf-ZGQ"/>
@@ -61,24 +62,35 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="LOI-ej-yhT"/>
                             <constraint firstItem="zPN-ed-qs2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="OTV-eL-9pp"/>
                             <constraint firstAttribute="trailing" secondItem="4ly-Hr-9NF" secondAttribute="trailing" id="S0J-L7-tP2"/>
+                            <constraint firstItem="JsE-TU-DE4" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="U8O-Wv-e1q"/>
+                            <constraint firstAttribute="centerX" secondItem="JsE-TU-DE4" secondAttribute="centerX" id="aaq-Eo-BTq"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cds-tc-L9o"/>
+                            <constraint firstItem="yvz-hL-qFh" firstAttribute="top" secondItem="JsE-TU-DE4" secondAttribute="bottom" constant="58" id="gdb-iQ-xZQ"/>
+                            <constraint firstAttribute="centerX" secondItem="JsE-TU-DE4" secondAttribute="centerX" id="hE3-e9-NR0"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="jId-ux-BkJ"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="yvz-hL-qFh" secondAttribute="bottom" constant="32" id="mGd-MR-nQi"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="top" secondItem="zPN-ed-qs2" secondAttribute="bottom" constant="33" id="rLu-5f-NtB"/>
+                            <constraint firstItem="JsE-TU-DE4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="184" id="raa-sl-vlb"/>
                             <constraint firstItem="JsE-TU-DE4" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="ssb-kX-Stc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4ly-Hr-9NF" secondAttribute="trailing" id="xuf-q9-lE5"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="xyd-bk-Lc5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="4nh-dS-n0m"/>
                                 <exclude reference="IAd-MH-qhz"/>
                                 <exclude reference="xuf-q9-lE5"/>
                                 <exclude reference="xyd-bk-Lc5"/>
                                 <exclude reference="Act-9Q-JM9"/>
+                                <exclude reference="CEZ-7O-SIq"/>
                                 <exclude reference="FSM-3p-diR"/>
+                                <exclude reference="hE3-e9-NR0"/>
+                                <exclude reference="raa-sl-vlb"/>
+                                <exclude reference="ssb-kX-Stc"/>
                                 <exclude reference="DkE-IZ-4LA"/>
                                 <exclude reference="IQb-99-1k5"/>
                                 <exclude reference="JYZ-0f-46P"/>
+                                <exclude reference="gdb-iQ-xZQ"/>
                                 <exclude reference="rLu-5f-NtB"/>
                                 <exclude reference="Hxn-bf-ZGQ"/>
                             </mask>
@@ -108,7 +120,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
                             </imageView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j72-cs-mU6">
-                                <rect key="frame" x="160" y="120" width="281" height="423"/>
+                                <rect key="frame" x="160" y="120" width="295" height="282"/>
                                 <string key="text">INSTRUCCIONES DE USO 
 1. Envía tus datos y el pago correspondiente. 
 2. Un representante de "Torero" redactará y presentará de inmediato tu amparo. 
@@ -123,20 +135,27 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <color key="backgroundColor" red="0.56862745100000001" green="0.66274509800000003" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="j72-cs-mU6" secondAttribute="centerX" id="1v5-3R-apc"/>
+                            <constraint firstItem="j72-cs-mU6" firstAttribute="top" secondItem="JWb-RG-Y8U" secondAttribute="bottom" constant="8" id="9uO-GW-SeL"/>
                             <constraint firstAttribute="trailing" secondItem="JWb-RG-Y8U" secondAttribute="trailing" id="DB0-G5-h0y"/>
                             <constraint firstItem="j72-cs-mU6" firstAttribute="top" secondItem="JWb-RG-Y8U" secondAttribute="bottom" constant="8" id="FJd-FD-JaT"/>
+                            <constraint firstItem="j72-cs-mU6" firstAttribute="top" secondItem="JWb-RG-Y8U" secondAttribute="bottom" constant="8" id="IHK-Td-2T8"/>
                             <constraint firstItem="JWb-RG-Y8U" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-16" id="P3b-aI-hx6"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="j72-cs-mU6" secondAttribute="bottom" constant="8" id="Q2h-Xz-d61"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JWb-RG-Y8U" secondAttribute="trailing" constant="-16" id="SFM-1z-6Uq"/>
                             <constraint firstItem="JWb-RG-Y8U" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="TJ3-0p-WAk"/>
                             <constraint firstItem="JWb-RG-Y8U" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="iQC-i2-VzT"/>
                             <constraint firstItem="JWb-RG-Y8U" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="lNO-lt-Uwx"/>
+                            <constraint firstAttribute="centerX" secondItem="j72-cs-mU6" secondAttribute="centerX" id="y1U-Ic-7C8"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="P3b-aI-hx6"/>
                                 <exclude reference="SFM-1z-6Uq"/>
                                 <exclude reference="lNO-lt-Uwx"/>
+                                <exclude reference="1v5-3R-apc"/>
+                                <exclude reference="9uO-GW-SeL"/>
                                 <exclude reference="FJd-FD-JaT"/>
+                                <exclude reference="Q2h-Xz-d61"/>
                             </mask>
                         </variation>
                     </view>
@@ -234,7 +253,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Z3e-Ec-lgc">
                                 <rect key="frame" x="151" y="69" width="433" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="next"/>
                             </textField>
@@ -244,7 +263,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q12-R2-j4s">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escoje primero tu delegación" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q12-R2-j4s">
                                 <rect key="frame" x="151" y="365" width="433" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -277,6 +296,12 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                     <segue destination="gHE-tC-hfr" kind="show" id="a0f-tw-Nnh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="o" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jv-Bx-pk7">
+                                <rect key="frame" x="71" y="387" width="14" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.66274509800000003" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -289,17 +314,22 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                             <constraint firstItem="Vnc-F4-vnr" firstAttribute="top" secondItem="4rG-wG-9Gd" secondAttribute="bottom" constant="17" id="5aU-vM-h1k"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="centerX" secondItem="qsN-Hl-pG7" secondAttribute="centerX" id="9FL-C8-gZ1"/>
                             <constraint firstItem="7zC-4p-QYR" firstAttribute="top" secondItem="xyX-Mc-iaS" secondAttribute="bottom" constant="17" id="9au-fW-2Vv"/>
+                            <constraint firstItem="4jv-Bx-pk7" firstAttribute="leading" secondItem="CdA-Hy-YHK" secondAttribute="leadingMargin" constant="20" id="ASI-Af-OOt"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="centerX" secondItem="Z3e-Ec-lgc" secondAttribute="centerX" id="BUx-O8-7d5"/>
                             <constraint firstItem="FQj-Cr-Oy3" firstAttribute="top" secondItem="Vnc-F4-vnr" secondAttribute="bottom" constant="15" id="BW9-Hq-G4T"/>
+                            <constraint firstItem="32F-rg-dIz" firstAttribute="centerX" secondItem="Cg8-dW-28v" secondAttribute="centerX" id="CTS-WU-aDx"/>
                             <constraint firstItem="9h1-Yj-WBO" firstAttribute="top" secondItem="FQj-Cr-Oy3" secondAttribute="bottom" constant="13" id="E3e-qY-Og6"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="centerX" secondItem="YKB-vM-P03" secondAttribute="centerX" id="GSw-pT-n6a"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="width" secondItem="Qw4-HU-N5J" secondAttribute="width" id="HOe-WW-QF9"/>
                             <constraint firstItem="YKB-vM-P03" firstAttribute="top" secondItem="q3O-fI-Ye0" secondAttribute="bottom" constant="8" id="I5g-DC-5a0"/>
+                            <constraint firstItem="32F-rg-dIz" firstAttribute="centerX" secondItem="4jv-Bx-pk7" secondAttribute="centerX" id="IIS-5h-1jM"/>
                             <constraint firstItem="Cg8-dW-28v" firstAttribute="top" secondItem="LBJ-or-ynL" secondAttribute="bottom" constant="16" id="Iaz-L0-Ba5"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="top" secondItem="80P-Zy-XL0" secondAttribute="bottom" constant="8" id="IlV-w3-aTm"/>
+                            <constraint firstItem="32F-rg-dIz" firstAttribute="top" secondItem="4jv-Bx-pk7" secondAttribute="bottom" id="Kjy-l0-o4V"/>
                             <constraint firstItem="80P-Zy-XL0" firstAttribute="top" secondItem="qsN-Hl-pG7" secondAttribute="bottom" constant="50" id="LgC-9X-jWB"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="width" secondItem="qsN-Hl-pG7" secondAttribute="width" id="Nwa-1k-LYp"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="centerX" secondItem="Qw4-HU-N5J" secondAttribute="centerX" id="RJn-5y-CFM"/>
+                            <constraint firstItem="hbs-41-Bpb" firstAttribute="leading" secondItem="32F-rg-dIz" secondAttribute="trailing" constant="29" id="UOp-Ec-9OX"/>
                             <constraint firstItem="Qw4-HU-N5J" firstAttribute="top" secondItem="Z3e-Ec-lgc" secondAttribute="bottom" constant="8" id="Uim-6U-xjn"/>
                             <constraint firstItem="9h1-Yj-WBO" firstAttribute="leading" secondItem="CdA-Hy-YHK" secondAttribute="leadingMargin" constant="20" id="VbM-8A-zrc"/>
                             <constraint firstItem="4rG-wG-9Gd" firstAttribute="leading" secondItem="CdA-Hy-YHK" secondAttribute="leadingMargin" id="YHj-dN-iFr"/>
@@ -311,11 +341,13 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                             <constraint firstItem="LBJ-or-ynL" firstAttribute="leading" secondItem="CdA-Hy-YHK" secondAttribute="leadingMargin" constant="20" id="gbQ-vu-62F"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="width" secondItem="YKB-vM-P03" secondAttribute="width" id="hWa-Yu-9rh"/>
                             <constraint firstItem="Cg8-dW-28v" firstAttribute="leading" secondItem="CdA-Hy-YHK" secondAttribute="leadingMargin" constant="20" id="hfF-ai-5Mb"/>
+                            <constraint firstItem="q12-R2-j4s" firstAttribute="leading" secondItem="Cg8-dW-28v" secondAttribute="trailing" constant="49" id="ioV-1J-GvJ"/>
                             <constraint firstItem="Z3e-Ec-lgc" firstAttribute="trailing" secondItem="CdA-Hy-YHK" secondAttribute="trailingMargin" id="j34-a1-V0v"/>
                             <constraint firstItem="FQj-Cr-Oy3" firstAttribute="leading" secondItem="CdA-Hy-YHK" secondAttribute="leadingMargin" id="lQS-Ub-FHu"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="width" secondItem="q3O-fI-Ye0" secondAttribute="width" id="lYU-0D-hen"/>
                             <constraint firstItem="q12-R2-j4s" firstAttribute="centerX" secondItem="q3O-fI-Ye0" secondAttribute="centerX" id="las-Jj-USm"/>
                             <constraint firstItem="TWY-d8-ecE" firstAttribute="top" secondItem="DpL-9l-ygr" secondAttribute="bottom" constant="8" id="mm5-TX-0Gb"/>
+                            <constraint firstItem="4jv-Bx-pk7" firstAttribute="top" secondItem="LBJ-or-ynL" secondAttribute="bottom" constant="35" id="mu2-jH-z16"/>
                             <constraint firstItem="32F-rg-dIz" firstAttribute="top" secondItem="Cg8-dW-28v" secondAttribute="bottom" constant="19" id="nHX-Wf-jxD"/>
                             <constraint firstItem="xyX-Mc-iaS" firstAttribute="leading" secondItem="CdA-Hy-YHK" secondAttribute="leadingMargin" constant="20" id="nP6-eY-Vyb"/>
                             <constraint firstItem="Tfa-HO-Tzj" firstAttribute="leading" secondItem="CdA-Hy-YHK" secondAttribute="leadingMargin" id="odO-BQ-4k2"/>
@@ -327,6 +359,12 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                             <constraint firstItem="Z3e-Ec-lgc" firstAttribute="leading" secondItem="4rG-wG-9Gd" secondAttribute="trailing" constant="73" id="zK2-Sq-iE3"/>
                             <constraint firstItem="LBJ-or-ynL" firstAttribute="top" secondItem="Tfa-HO-Tzj" secondAttribute="bottom" constant="21" id="zea-DA-OqW"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ASI-Af-OOt"/>
+                                <exclude reference="nHX-Wf-jxD"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="SOLICITA" id="yah-pl-ay2">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-17"/>
@@ -365,7 +403,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dirección" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMG-rN-IiK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Domicilio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMG-rN-IiK">
                                 <rect key="frame" x="16" y="145" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -638,7 +676,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1jV-h6-zsa">
                                 <rect key="frame" x="211" y="98" width="373" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
@@ -651,13 +689,13 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM(Mes)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRu-YF-okI">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM(Mes)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRu-YF-okI">
                                 <rect key="frame" x="211" y="182" width="148" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="AA(Año)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TO2-gk-V8B">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="AA(Año)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TO2-gk-V8B">
                                 <rect key="frame" x="383" y="182" width="201" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -684,6 +722,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                             <constraint firstItem="dDH-Ue-uL4" firstAttribute="top" secondItem="wSL-Ij-4Ii" secondAttribute="bottom" constant="50" id="63X-Y6-HGA"/>
                             <constraint firstItem="TO2-gk-V8B" firstAttribute="trailing" secondItem="3cZ-jA-rou" secondAttribute="trailingMargin" id="88p-jY-00J"/>
                             <constraint firstItem="Lhk-ZU-jPF" firstAttribute="leading" secondItem="3cZ-jA-rou" secondAttribute="leadingMargin" id="E6h-yg-G78"/>
+                            <constraint firstItem="1jV-h6-zsa" firstAttribute="leading" secondItem="zRu-YF-okI" secondAttribute="leading" id="H1z-38-N1R"/>
                             <constraint firstAttribute="bottomMargin" secondItem="MA1-nv-SXU" secondAttribute="bottom" constant="20" id="OVz-Ny-Suf"/>
                             <constraint firstItem="1jV-h6-zsa" firstAttribute="leading" secondItem="vuC-WM-S8w" secondAttribute="trailing" constant="36" id="Rpq-Lg-bcQ"/>
                             <constraint firstItem="TO2-gk-V8B" firstAttribute="top" secondItem="1jV-h6-zsa" secondAttribute="bottom" constant="54" id="S3L-cX-9bH"/>
@@ -709,7 +748,9 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="H1z-38-N1R"/>
                                 <exclude reference="Rpq-Lg-bcQ"/>
+                                <exclude reference="Zl5-qy-ehi"/>
                                 <exclude reference="cf5-zh-NVm"/>
                             </mask>
                         </variation>

@@ -122,6 +122,26 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         return ""
     }
     
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {
+        let pickerLabel = UILabel()
+        pickerLabel.textAlignment = .Center
+        if pickerView.tag == 1 {
+            let titleData = pickDelegaciones[row]
+            let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 14.0)!,NSForegroundColorAttributeName:UIColor.blackColor()])
+            pickerLabel.attributedText = myTitle
+        } else if pickerView.tag == 2 {
+            let titleData = selectedDelegacion[row] as! String
+            let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 14.0)!,NSForegroundColorAttributeName:UIColor.blackColor()])
+            
+            pickerLabel.attributedText = myTitle
+        } else if pickerView.tag == 3 {
+            let titleData = pickItinerantes[row]
+            let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 14.0)!,NSForegroundColorAttributeName:UIColor.blackColor()])
+            pickerLabel.attributedText = myTitle
+        }
+        return pickerLabel
+    }
+    
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView.tag == 1 {
             switch row {
