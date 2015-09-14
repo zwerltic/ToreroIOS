@@ -46,7 +46,7 @@ class PagarViewController: UIViewController {
         var conekta = Conekta(publicKey: "key_EfsX62HbiTSNsuHr5q6xv2Q")
         
         //var tarjeta = Card(last4: numberField.text, name: nameField.text, cvc: ccField.text, exp_month: expMonthField.text, exp_year: expYearField.text)
-        var tarjeta = Card(last4: "4242424242424242", name: "Julion", cvc: "456", exp_month: "09", exp_year:"2018")
+       var tarjeta = Card(last4: "4242424242424242", name: "Julion", cvc: "456", exp_month: "09", exp_year:"2018")
         var postInfo = nameSaved + lastSaved + streetSaved + numberSaved + coloniaSaved + delegacionSaved + juzgadoSaved + itineranteSaved
         
         conekta.createToken(tarjeta, withSuccess: { (data) -> Void in

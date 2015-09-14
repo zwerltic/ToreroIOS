@@ -463,7 +463,6 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeSavedValues:" destination="gHE-tC-hfr" eventType="touchDragInside" id="Jyt-bE-Xmu"/>
                                     <segue destination="ujN-0F-hxC" kind="show" id="A7F-7w-8xN"/>
                                 </connections>
                             </button>
@@ -772,7 +771,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
         <!--GRACIAS-->
         <scene sceneID="gYb-81-AsT">
             <objects>
-                <viewController title="GRACIAS" id="McJ-aZ-cBl" sceneMemberID="viewController">
+                <viewController title="GRACIAS" id="McJ-aZ-cBl" customClass="GraciasViewController" customModule="Torero" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zTT-k9-irM"/>
                         <viewControllerLayoutGuide type="bottom" id="c11-7h-QxS"/>

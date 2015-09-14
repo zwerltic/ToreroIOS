@@ -16,6 +16,7 @@
 		823CB9951BA3B3C400A54990 /* libDeviceCollectorLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 823CB9941BA3B3C400A54990 /* libDeviceCollectorLibrary.a */; };
 		823CB9971BA3B8CE00A54990 /* rsz_pantalla2.png in Resources */ = {isa = PBXBuildFile; fileRef = 823CB9961BA3B8CE00A54990 /* rsz_pantalla2.png */; };
 		823CB9991BA3B8D800A54990 /* rsz_1pantalla1.png in Resources */ = {isa = PBXBuildFile; fileRef = 823CB9981BA3B8D800A54990 /* rsz_1pantalla1.png */; };
+		82431AAD1BA65EDE0014E987 /* GraciasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82431AAC1BA65EDE0014E987 /* GraciasViewController.swift */; };
 		82A983871B75A6DF00A2D028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A983861B75A6DF00A2D028 /* AppDelegate.swift */; };
 		82A983891B75A6DF00A2D028 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A983881B75A6DF00A2D028 /* FirstViewController.swift */; };
 		82A9838B1B75A6DF00A2D028 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9838A1B75A6DF00A2D028 /* SecondViewController.swift */; };
@@ -51,6 +52,7 @@
 		823CB9941BA3B3C400A54990 /* libDeviceCollectorLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDeviceCollectorLibrary.a; path = "../../../Downloads/conekta-ios-master/Conekta-SDK/libDeviceCollectorLibrary.a"; sourceTree = "<group>"; };
 		823CB9961BA3B8CE00A54990 /* rsz_pantalla2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rsz_pantalla2.png; path = ../../../../Downloads/rsz_pantalla2.png; sourceTree = "<group>"; };
 		823CB9981BA3B8D800A54990 /* rsz_1pantalla1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rsz_1pantalla1.png; path = ../../../../Downloads/rsz_1pantalla1.png; sourceTree = "<group>"; };
+		82431AAC1BA65EDE0014E987 /* GraciasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraciasViewController.swift; sourceTree = "<group>"; };
 		82A983811B75A6DF00A2D028 /* Torero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A983851B75A6DF00A2D028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82A983861B75A6DF00A2D028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				82A983AE1B75F58600A2D028 /* PagarViewController.swift */,
 				82A983AA1B75F53200A2D028 /* ConfirmarViewController.swift */,
 				82A9838A1B75A6DF00A2D028 /* SecondViewController.swift */,
+				82431AAC1BA65EDE0014E987 /* GraciasViewController.swift */,
 				82A9838C1B75A6DF00A2D028 /* Main.storyboard */,
 				82A9838F1B75A6DF00A2D028 /* Images.xcassets */,
 				82A983911B75A6DF00A2D028 /* LaunchScreen.xib */,
@@ -270,6 +273,7 @@
 				82A983AD1B75F55600A2D028 /* AceptarViewController.swift in Sources */,
 				82A983891B75A6DF00A2D028 /* FirstViewController.swift in Sources */,
 				82A983AB1B75F53200A2D028 /* ConfirmarViewController.swift in Sources */,
+				82431AAD1BA65EDE0014E987 /* GraciasViewController.swift in Sources */,
 				823CB9911BA3B06D00A54990 /* Token.swift in Sources */,
 				823CB9901BA3B06D00A54990 /* Connection.swift in Sources */,
 				823CB98E1BA3B06D00A54990 /* Card.swift in Sources */,
