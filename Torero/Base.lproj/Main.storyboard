@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HCO-o3-XZz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HCO-o3-XZz">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +23,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rsz_1pantalla1.png" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-Hr-9NF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rsz_1pantalla1.png" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-Hr-9NF">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
                             </imageView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Teléfono: 5521339356" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPN-ed-qs2">
@@ -32,11 +32,18 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JsE-TU-DE4">
-                                <rect key="frame" x="193" y="120" width="214" height="271"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zJS-VB-st5">
+                                <rect key="frame" x="182" y="120" width="213" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="2de-OL-h3s"/>
+                                    <constraint firstAttribute="height" constant="238" id="dCe-u2-RV1"/>
+                                    <constraint firstAttribute="height" constant="251" id="eU3-ol-DVI"/>
+                                    <constraint firstAttribute="width" constant="213" id="lwh-Da-CKg"/>
+                                    <constraint firstAttribute="height" constant="273" id="xqx-nH-vBU"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">ACERCA DE TORERO
+                                        <string key="content">ACERCA DE TORERO 
 Torero es una empresa dedicada a facilitar el acceso a la justicia a la población ofreciendo el servicio de amparo a los ciudadanos cuyos derechos constitucionales fueron violados por el programa alcoholimetro </string>
                                         <attributes>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
@@ -45,54 +52,54 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2de-OL-h3s"/>
+                                        <exclude reference="dCe-u2-RV1"/>
+                                        <exclude reference="eU3-ol-DVI"/>
+                                    </mask>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.56862745098039214" green="0.66274509803921566" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="yvz-hL-qFh" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-4" id="3EQ-m8-xbm"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="top" secondItem="zPN-ed-qs2" secondAttribute="bottom" constant="20" id="4kB-tI-U9J"/>
-                            <constraint firstItem="4ly-Hr-9NF" firstAttribute="centerX" secondItem="JsE-TU-DE4" secondAttribute="centerX" id="4nh-dS-n0m"/>
-                            <constraint firstItem="JsE-TU-DE4" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="Act-9Q-JM9"/>
-                            <constraint firstItem="JsE-TU-DE4" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="CEZ-7O-SIq"/>
-                            <constraint firstItem="zPN-ed-qs2" firstAttribute="top" secondItem="JsE-TU-DE4" secondAttribute="bottom" constant="17" id="DkE-IZ-4LA"/>
-                            <constraint firstItem="JsE-TU-DE4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="FSM-3p-diR"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="yvz-hL-qFh" secondAttribute="bottom" constant="8" id="Hxn-bf-ZGQ"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="IAd-MH-qhz"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="leading" secondItem="zPN-ed-qs2" secondAttribute="trailing" constant="156" id="IQb-99-1k5"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="JYZ-0f-46P"/>
+                            <constraint firstItem="yvz-hL-qFh" firstAttribute="top" secondItem="zPN-ed-qs2" secondAttribute="bottom" constant="20" id="KSG-N7-d08"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="LOI-ej-yhT"/>
                             <constraint firstItem="zPN-ed-qs2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="OTV-eL-9pp"/>
+                            <constraint firstItem="zJS-VB-st5" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="PBE-Bn-42b"/>
                             <constraint firstAttribute="trailing" secondItem="4ly-Hr-9NF" secondAttribute="trailing" id="S0J-L7-tP2"/>
-                            <constraint firstItem="JsE-TU-DE4" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="U8O-Wv-e1q"/>
-                            <constraint firstAttribute="centerX" secondItem="JsE-TU-DE4" secondAttribute="centerX" id="aaq-Eo-BTq"/>
+                            <constraint firstItem="zPN-ed-qs2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-4" id="ThG-EA-8jj"/>
+                            <constraint firstItem="zJS-VB-st5" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="VO6-L5-3ZL"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="yvz-hL-qFh" secondAttribute="bottom" constant="32" id="c7A-aY-z74"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cds-tc-L9o"/>
-                            <constraint firstItem="yvz-hL-qFh" firstAttribute="top" secondItem="JsE-TU-DE4" secondAttribute="bottom" constant="58" id="gdb-iQ-xZQ"/>
-                            <constraint firstAttribute="centerX" secondItem="JsE-TU-DE4" secondAttribute="centerX" id="hE3-e9-NR0"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="jId-ux-BkJ"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="yvz-hL-qFh" secondAttribute="bottom" constant="32" id="mGd-MR-nQi"/>
                             <constraint firstItem="yvz-hL-qFh" firstAttribute="top" secondItem="zPN-ed-qs2" secondAttribute="bottom" constant="33" id="rLu-5f-NtB"/>
-                            <constraint firstItem="JsE-TU-DE4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="184" id="raa-sl-vlb"/>
-                            <constraint firstItem="JsE-TU-DE4" firstAttribute="top" secondItem="4ly-Hr-9NF" secondAttribute="bottom" constant="8" id="ssb-kX-Stc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4ly-Hr-9NF" secondAttribute="trailing" id="xuf-q9-lE5"/>
                             <constraint firstItem="4ly-Hr-9NF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="xyd-bk-Lc5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="4nh-dS-n0m"/>
                                 <exclude reference="IAd-MH-qhz"/>
+                                <exclude reference="S0J-L7-tP2"/>
+                                <exclude reference="cds-tc-L9o"/>
+                                <exclude reference="jId-ux-BkJ"/>
                                 <exclude reference="xuf-q9-lE5"/>
                                 <exclude reference="xyd-bk-Lc5"/>
-                                <exclude reference="Act-9Q-JM9"/>
-                                <exclude reference="CEZ-7O-SIq"/>
-                                <exclude reference="FSM-3p-diR"/>
-                                <exclude reference="hE3-e9-NR0"/>
-                                <exclude reference="raa-sl-vlb"/>
-                                <exclude reference="ssb-kX-Stc"/>
-                                <exclude reference="DkE-IZ-4LA"/>
+                                <exclude reference="OTV-eL-9pp"/>
+                                <exclude reference="4kB-tI-U9J"/>
                                 <exclude reference="IQb-99-1k5"/>
                                 <exclude reference="JYZ-0f-46P"/>
-                                <exclude reference="gdb-iQ-xZQ"/>
+                                <exclude reference="LOI-ej-yhT"/>
                                 <exclude reference="rLu-5f-NtB"/>
                                 <exclude reference="Hxn-bf-ZGQ"/>
+                                <exclude reference="mGd-MR-nQi"/>
                             </mask>
                         </variation>
                     </view>
@@ -116,11 +123,15 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rsz_pantalla2.png" translatesAutoresizingMaskIntoConstraints="NO" id="JWb-RG-Y8U">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rsz_pantalla2.png" translatesAutoresizingMaskIntoConstraints="NO" id="JWb-RG-Y8U">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
                             </imageView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j72-cs-mU6">
-                                <rect key="frame" x="160" y="120" width="295" height="282"/>
+                                <rect key="frame" x="160" y="120" width="295" height="388"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="6wY-fs-Ydf"/>
+                                    <constraint firstAttribute="height" constant="388" id="7iO-Nv-C6H"/>
+                                </constraints>
                                 <string key="text">INSTRUCCIONES DE USO 
 1. Envía tus datos y el pago correspondiente. 
 2. Un representante de "Torero" redactará y presentará de inmediato tu amparo. 
@@ -143,18 +154,25 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="j72-cs-mU6" secondAttribute="bottom" constant="8" id="Q2h-Xz-d61"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JWb-RG-Y8U" secondAttribute="trailing" constant="-16" id="SFM-1z-6Uq"/>
                             <constraint firstItem="JWb-RG-Y8U" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="TJ3-0p-WAk"/>
+                            <constraint firstItem="j72-cs-mU6" firstAttribute="top" secondItem="JWb-RG-Y8U" secondAttribute="bottom" constant="8" id="XQp-LP-92l"/>
                             <constraint firstItem="JWb-RG-Y8U" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="iQC-i2-VzT"/>
                             <constraint firstItem="JWb-RG-Y8U" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="lNO-lt-Uwx"/>
+                            <constraint firstItem="j72-cs-mU6" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="tw7-QF-ffb"/>
                             <constraint firstAttribute="centerX" secondItem="j72-cs-mU6" secondAttribute="centerX" id="y1U-Ic-7C8"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="DB0-G5-h0y"/>
                                 <exclude reference="P3b-aI-hx6"/>
                                 <exclude reference="SFM-1z-6Uq"/>
+                                <exclude reference="TJ3-0p-WAk"/>
+                                <exclude reference="iQC-i2-VzT"/>
                                 <exclude reference="lNO-lt-Uwx"/>
                                 <exclude reference="1v5-3R-apc"/>
                                 <exclude reference="9uO-GW-SeL"/>
                                 <exclude reference="FJd-FD-JaT"/>
+                                <exclude reference="IHK-Td-2T8"/>
+                                <exclude reference="y1U-Ic-7C8"/>
                                 <exclude reference="Q2h-Xz-d61"/>
                             </mask>
                         </variation>
@@ -179,37 +197,37 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qsN-Hl-pG7">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qsN-Hl-pG7">
                                 <rect key="frame" x="151" y="247" width="433" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnc-F4-vnr">
-                                <rect key="frame" x="16" y="110" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Apellidos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnc-F4-vnr">
+                                <rect key="frame" x="16" y="110" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rG-wG-9Gd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rG-wG-9Gd">
                                 <rect key="frame" x="16" y="72" width="62" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calle     " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h1-Yj-WBO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calle     " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h1-Yj-WBO">
                                 <rect key="frame" x="36" y="180" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qw4-HU-N5J">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qw4-HU-N5J">
                                 <rect key="frame" x="151" y="107" width="433" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3O-fI-Ye0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q3O-fI-Ye0">
                                 <rect key="frame" x="151" y="171" width="433" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -221,13 +239,13 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YKB-vM-P03">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YKB-vM-P03">
                                 <rect key="frame" x="151" y="209" width="433" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juzgado Cívico" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-HO-Tzj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Juzgado Cívico" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-HO-Tzj">
                                 <rect key="frame" x="16" y="289" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -245,7 +263,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegación" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBJ-or-ynL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Delegación" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBJ-or-ynL">
                                 <rect key="frame" x="36" y="331" width="86" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -257,31 +275,31 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="next"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colonia   " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zC-4p-QYR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Colonia   " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zC-4p-QYR">
                                 <rect key="frame" x="36" y="250" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escoje primero tu delegación" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q12-R2-j4s">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escoje primero tu delegación" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q12-R2-j4s">
                                 <rect key="frame" x="151" y="365" width="433" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="80P-Zy-XL0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="80P-Zy-XL0">
                                 <rect key="frame" x="151" y="327" width="433" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-41-Bpb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-41-Bpb">
                                 <rect key="frame" x="151" y="404" width="433" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQj-Cr-Oy3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dirección" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQj-Cr-Oy3">
                                 <rect key="frame" x="16" y="146" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -399,7 +417,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rQ-GC-0Fg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Apellido" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rQ-GC-0Fg">
                                 <rect key="frame" x="16" y="116" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -411,49 +429,49 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K9-aP-l1V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K9-aP-l1V">
                                 <rect key="frame" x="16" y="87" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calle    :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDl-5I-1di">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calle    :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDl-5I-1di">
                                 <rect key="frame" x="41" y="181" width="543" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colonia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akb-A3-pTU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Colonia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akb-A3-pTU">
                                 <rect key="frame" x="41" y="239" width="543" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHf-n5-WhC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Numero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHf-n5-WhC">
                                 <rect key="frame" x="41" y="210" width="543" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juzgado Cívico" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-pw-hhJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Juzgado Cívico" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-pw-hhJ">
                                 <rect key="frame" x="16" y="289" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juzgado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-Gs-E2s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Juzgado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-Gs-E2s">
                                 <rect key="frame" x="41" y="363" width="543" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegación" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfH-Nq-vt2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Delegación" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfH-Nq-vt2">
                                 <rect key="frame" x="41" y="334" width="543" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Itinerante" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qs-Pr-msH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Itinerante" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qs-Pr-msH">
                                 <rect key="frame" x="41" y="392" width="543" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -530,7 +548,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Términos y Condiciones de Uso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj9-x2-wmA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Términos y Condiciones de Uso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj9-x2-wmA">
                                 <rect key="frame" x="16" y="84" width="245" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -641,7 +659,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de la Tarjeta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuC-WM-S8w">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Número de la Tarjeta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuC-WM-S8w">
                                 <rect key="frame" x="16" y="102" width="164" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="164" id="0X3-96-DK1"/>
@@ -651,7 +669,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expira" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfd-Om-NvU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Expira" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfd-Om-NvU">
                                 <rect key="frame" x="18" y="186" width="49" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -666,7 +684,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Código de Seguridad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2G-bW-BRh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Código de Seguridad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2G-bW-BRh">
                                 <rect key="frame" x="16" y="261" width="164" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="164" id="zDt-O9-yUr"/>
@@ -675,13 +693,13 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1jV-h6-zsa">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1jV-h6-zsa">
                                 <rect key="frame" x="211" y="98" width="373" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSL-Ij-4Ii">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSL-Ij-4Ii">
                                 <rect key="frame" x="211" y="252" width="76" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -711,7 +729,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                                     <action selector="tokenizeCard:" destination="dI1-rJ-BfQ" eventType="touchUpInside" id="jTG-la-g5w"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDH-Ue-uL4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDH-Ue-uL4">
                                 <rect key="frame" x="211" y="332" width="373" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

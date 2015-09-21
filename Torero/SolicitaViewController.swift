@@ -77,11 +77,11 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        if let touch = touches.first as? UITouch {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if let _ = touches.first {
             view.endEditing(true)
         }
-        super.touchesBegan(touches , withEvent:event)
+        super.touchesBegan(touches, withEvent:event)
     }
     
     
@@ -111,18 +111,18 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView.tag == 1 {
             return pickDelegaciones[row]
         } else if pickerView.tag == 2 {
-            return selectedDelegacion[row] as! String
+            return selectedDelegacion[row] as? String
         } else if pickerView.tag == 3 {
             return pickItinerantes[row]
         }
         return ""
     }
     
-    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
         let pickerLabel = UILabel()
         pickerLabel.textAlignment = .Center
         if pickerView.tag == 1 {
@@ -185,7 +185,7 @@ class SolicitaViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             pickerJuzgado.reloadAllComponents()
         } else if pickerView.tag == 2 {
             // Get the current item
-            juzgadoTextField.text = selectedDelegacion[row] as! String
+            juzgadoTextField.text = selectedDelegacion[row] as? String
         } else if pickerView.tag == 3 {
             itineranteTextField.text = pickItinerantes[row]
         }
