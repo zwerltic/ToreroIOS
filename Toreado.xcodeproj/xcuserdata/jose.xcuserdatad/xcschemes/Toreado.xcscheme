@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "82A983801B75A6DF00A2D028"
-               BuildableName = "Torero.app"
-               BlueprintName = "Torero"
-               ReferencedContainer = "container:Torero.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "82A983971B75A6DF00A2D028"
-               BuildableName = "ToreroTests.xctest"
-               BlueprintName = "ToreroTests"
-               ReferencedContainer = "container:Torero.xcodeproj">
+               BuildableName = "Toreado.app"
+               BlueprintName = "Toreado"
+               ReferencedContainer = "container:Toreado.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "82A983971B75A6DF00A2D028"
-               BuildableName = "ToreroTests.xctest"
-               BlueprintName = "ToreroTests"
-               ReferencedContainer = "container:Torero.xcodeproj">
+               BuildableName = "Toreado.xctest"
+               BlueprintName = "ToreadoTests"
+               ReferencedContainer = "container:Toreado.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "82A983801B75A6DF00A2D028"
-            BuildableName = "Torero.app"
-            BlueprintName = "Torero"
-            ReferencedContainer = "container:Torero.xcodeproj">
+            BuildableName = "Toreado.app"
+            BlueprintName = "Toreado"
+            ReferencedContainer = "container:Toreado.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "82A983801B75A6DF00A2D028"
-            BuildableName = "Torero.app"
-            BlueprintName = "Torero"
-            ReferencedContainer = "container:Torero.xcodeproj">
+            BuildableName = "Toreado.app"
+            BlueprintName = "Toreado"
+            ReferencedContainer = "container:Toreado.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "82A983801B75A6DF00A2D028"
-            BuildableName = "Torero.app"
-            BlueprintName = "Torero"
-            ReferencedContainer = "container:Torero.xcodeproj">
+            BuildableName = "Toreado.app"
+            BlueprintName = "Toreado"
+            ReferencedContainer = "container:Toreado.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -8,7 +8,7 @@
         <!--ACERCA DE-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Torero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Toreado" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -33,21 +33,30 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zJS-VB-st5">
-                                <rect key="frame" x="182" y="120" width="213" height="273"/>
+                                <rect key="frame" x="180" y="120" width="240" height="247"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="226" id="2de-OL-h3s"/>
+                                    <constraint firstAttribute="height" constant="247" id="Lyn-E2-zNQ"/>
                                     <constraint firstAttribute="height" constant="238" id="dCe-u2-RV1"/>
                                     <constraint firstAttribute="height" constant="251" id="eU3-ol-DVI"/>
+                                    <constraint firstAttribute="width" constant="240" id="fhs-lo-8Es"/>
                                     <constraint firstAttribute="width" constant="213" id="lwh-Da-CKg"/>
                                     <constraint firstAttribute="height" constant="273" id="xqx-nH-vBU"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">ACERCA DE TORERO 
-Torero es una empresa dedicada a facilitar el acceso a la justicia a la población ofreciendo el servicio de amparo a los ciudadanos cuyos derechos constitucionales fueron violados por el programa alcoholimetro </string>
+                                        <string key="content">ACERCA DE TOREADO 
+</string>
                                         <attributes>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Toreado es una empresa dedicada a facilitar el acceso a la justicia a la población ofreciendo el servicio de amparo a los ciudadanos cuyos derechos constitucionales fueron violados por el programa alcoholímetro.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -57,6 +66,8 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                         <exclude reference="2de-OL-h3s"/>
                                         <exclude reference="dCe-u2-RV1"/>
                                         <exclude reference="eU3-ol-DVI"/>
+                                        <exclude reference="lwh-Da-CKg"/>
+                                        <exclude reference="xqx-nH-vBU"/>
                                     </mask>
                                 </variation>
                             </textView>
@@ -114,7 +125,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
         <!--INSTRUCCIONES-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController title="INSTRUCCIONES" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Torero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INSTRUCCIONES" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Toreado" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -127,20 +138,28 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
                             </imageView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j72-cs-mU6">
-                                <rect key="frame" x="160" y="120" width="295" height="388"/>
+                                <rect key="frame" x="160" y="120" width="295" height="370"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="295" id="6wY-fs-Ydf"/>
                                     <constraint firstAttribute="height" constant="388" id="7iO-Nv-C6H"/>
+                                    <constraint firstAttribute="height" constant="370" id="dFb-I9-Rkm"/>
+                                    <constraint firstAttribute="height" constant="395" id="tBc-Rv-6YQ"/>
                                 </constraints>
                                 <string key="text">INSTRUCCIONES DE USO 
 1. Envía tus datos y el pago correspondiente. 
-2. Un representante de "Torero" redactará y presentará de inmediato tu amparo. 
+2. Un representante de "Toreado" redactará y presentará de inmediato tu amparo. 
 3. Un juez de distrito aprobará la suspensión de tus horas en "el torito" o "la vaquita". 
 4. Un secretario actuario será enviado a notificar la suspensión a la autoridad correspondiente. 
 5. Alcanzarás la libertad y podrás descansar tranquilo en casa. 
 6. En caso de que el juez determine que deberás cumplir posteriormente con horas de arresto, se te notificará en el domicilio que nos enviaste.</string>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7iO-Nv-C6H"/>
+                                        <exclude reference="tBc-Rv-6YQ"/>
+                                    </mask>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.66274509800000003" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -188,7 +207,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
         <!--Ingresa tus datos-->
         <scene sceneID="JjD-n4-CvW">
             <objects>
-                <viewController title="Ingresa tus datos" id="uiM-kN-DLf" customClass="SolicitaViewController" customModule="Torero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Ingresa tus datos" id="uiM-kN-DLf" customClass="SolicitaViewController" customModule="Toreado" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="weJ-Ox-qsc"/>
                         <viewControllerLayoutGuide type="bottom" id="TWY-d8-ecE"/>
@@ -233,7 +252,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Numero  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyX-Mc-iaS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Número  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyX-Mc-iaS">
                                 <rect key="frame" x="36" y="212" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -408,7 +427,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
         <!--CONFIRMAR-->
         <scene sceneID="Xlu-I3-epa">
             <objects>
-                <viewController title="CONFIRMAR" id="gHE-tC-hfr" customClass="ConfirmarViewController" customModule="Torero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CONFIRMAR" id="gHE-tC-hfr" customClass="ConfirmarViewController" customModule="Toreado" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="adB-Cm-Yae"/>
                         <viewControllerLayoutGuide type="bottom" id="Mcw-bT-bAP"/>
@@ -539,7 +558,7 @@ Torero es una empresa dedicada a facilitar el acceso a la justicia a la poblacio
         <!--TERMINOS-->
         <scene sceneID="Zx9-dk-hyH">
             <objects>
-                <viewController title="TERMINOS" id="ujN-0F-hxC" customClass="AceptarViewController" customModule="Torero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="TERMINOS" id="ujN-0F-hxC" customClass="AceptarViewController" customModule="Toreado" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8HY-F6-f7E"/>
                         <viewControllerLayoutGuide type="bottom" id="VFR-1m-Rcn"/>
@@ -650,7 +669,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
         <!--PAGAR-->
         <scene sceneID="OPJ-uy-1dk">
             <objects>
-                <viewController title="PAGAR" id="dI1-rJ-BfQ" customClass="PagarViewController" customModule="Torero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PAGAR" id="dI1-rJ-BfQ" customClass="PagarViewController" customModule="Toreado" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rSx-RY-RPs"/>
                         <viewControllerLayoutGuide type="bottom" id="DUn-gb-q9O"/>
@@ -735,17 +754,27 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Costo: $ 2,500.00 M.N." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRg-de-RCb">
+                                <rect key="frame" x="401" y="417" width="183" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.66274509800000003" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="DUn-gb-q9O" firstAttribute="top" secondItem="iRg-de-RCb" secondAttribute="bottom" constant="8" id="5Cc-2W-4ts"/>
                             <constraint firstItem="dDH-Ue-uL4" firstAttribute="top" secondItem="wSL-Ij-4Ii" secondAttribute="bottom" constant="50" id="63X-Y6-HGA"/>
                             <constraint firstItem="TO2-gk-V8B" firstAttribute="trailing" secondItem="3cZ-jA-rou" secondAttribute="trailingMargin" id="88p-jY-00J"/>
+                            <constraint firstItem="iRg-de-RCb" firstAttribute="top" secondItem="dDH-Ue-uL4" secondAttribute="bottom" constant="55" id="DdZ-O9-6ia"/>
                             <constraint firstItem="Lhk-ZU-jPF" firstAttribute="leading" secondItem="3cZ-jA-rou" secondAttribute="leadingMargin" id="E6h-yg-G78"/>
                             <constraint firstItem="1jV-h6-zsa" firstAttribute="leading" secondItem="zRu-YF-okI" secondAttribute="leading" id="H1z-38-N1R"/>
+                            <constraint firstItem="iRg-de-RCb" firstAttribute="top" secondItem="Lhk-ZU-jPF" secondAttribute="bottom" constant="8" id="Hau-hT-5d0"/>
                             <constraint firstAttribute="bottomMargin" secondItem="MA1-nv-SXU" secondAttribute="bottom" constant="20" id="OVz-Ny-Suf"/>
                             <constraint firstItem="1jV-h6-zsa" firstAttribute="leading" secondItem="vuC-WM-S8w" secondAttribute="trailing" constant="36" id="Rpq-Lg-bcQ"/>
                             <constraint firstItem="TO2-gk-V8B" firstAttribute="top" secondItem="1jV-h6-zsa" secondAttribute="bottom" constant="54" id="S3L-cX-9bH"/>
                             <constraint firstItem="B2G-bW-BRh" firstAttribute="top" secondItem="tfd-Om-NvU" secondAttribute="bottom" constant="54" id="T52-6V-CSb"/>
+                            <constraint firstItem="iRg-de-RCb" firstAttribute="leading" secondItem="3cZ-jA-rou" secondAttribute="leadingMargin" constant="-4" id="U1l-fs-dUH"/>
                             <constraint firstItem="tfd-Om-NvU" firstAttribute="leading" secondItem="3cZ-jA-rou" secondAttribute="leadingMargin" constant="2" id="VxT-ie-T9e"/>
                             <constraint firstItem="dDH-Ue-uL4" firstAttribute="leading" secondItem="Lhk-ZU-jPF" secondAttribute="trailing" constant="31" id="X11-Y6-9LP"/>
                             <constraint firstItem="wSL-Ij-4Ii" firstAttribute="top" secondItem="zRu-YF-okI" secondAttribute="bottom" constant="40" id="Z2U-DL-GRc"/>
@@ -756,11 +785,13 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                             <constraint firstItem="dDH-Ue-uL4" firstAttribute="top" secondItem="wSL-Ij-4Ii" secondAttribute="bottom" constant="60" id="cf5-zh-NVm"/>
                             <constraint firstItem="wSL-Ij-4Ii" firstAttribute="leading" secondItem="B2G-bW-BRh" secondAttribute="trailing" constant="31" id="gmA-uy-eEa"/>
                             <constraint firstItem="1jV-h6-zsa" firstAttribute="top" secondItem="rSx-RY-RPs" secondAttribute="bottom" constant="34" id="ipi-Yt-fv6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iRg-de-RCb" secondAttribute="trailing" constant="-4" id="jqn-OD-vHz"/>
                             <constraint firstItem="vuC-WM-S8w" firstAttribute="top" secondItem="rSx-RY-RPs" secondAttribute="bottom" constant="38" id="ku1-Yi-Ltc"/>
                             <constraint firstItem="1jV-h6-zsa" firstAttribute="leading" secondItem="vuC-WM-S8w" secondAttribute="trailing" constant="31" id="nAZ-Ic-xzl"/>
                             <constraint firstItem="vuC-WM-S8w" firstAttribute="leading" secondItem="3cZ-jA-rou" secondAttribute="leadingMargin" id="nfe-FR-VR2"/>
                             <constraint firstItem="B2G-bW-BRh" firstAttribute="leading" secondItem="3cZ-jA-rou" secondAttribute="leadingMargin" id="nlz-Yp-IPI"/>
                             <constraint firstItem="1jV-h6-zsa" firstAttribute="trailing" secondItem="3cZ-jA-rou" secondAttribute="trailingMargin" id="nml-0D-sgs"/>
+                            <constraint firstItem="iRg-de-RCb" firstAttribute="leading" secondItem="3cZ-jA-rou" secondAttribute="leadingMargin" constant="-2" id="qcB-AA-X6v"/>
                             <constraint firstItem="dDH-Ue-uL4" firstAttribute="trailing" secondItem="3cZ-jA-rou" secondAttribute="trailingMargin" id="ueW-Jc-M8q"/>
                             <constraint firstAttribute="centerX" secondItem="MA1-nv-SXU" secondAttribute="centerX" id="y6Y-Qj-vzL"/>
                             <constraint firstItem="TO2-gk-V8B" firstAttribute="leading" secondItem="zRu-YF-okI" secondAttribute="trailing" constant="24" id="yRP-g6-6d1"/>
@@ -771,6 +802,10 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                                 <exclude reference="Rpq-Lg-bcQ"/>
                                 <exclude reference="Zl5-qy-ehi"/>
                                 <exclude reference="cf5-zh-NVm"/>
+                                <exclude reference="Hau-hT-5d0"/>
+                                <exclude reference="U1l-fs-dUH"/>
+                                <exclude reference="qcB-AA-X6v"/>
+                                <exclude reference="5Cc-2W-4ts"/>
                             </mask>
                         </variation>
                     </view>
@@ -791,7 +826,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
         <!--GRACIAS-->
         <scene sceneID="gYb-81-AsT">
             <objects>
-                <viewController title="GRACIAS" id="McJ-aZ-cBl" customClass="GraciasViewController" customModule="Torero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GRACIAS" id="McJ-aZ-cBl" customClass="GraciasViewController" customModule="Toreado" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zTT-k9-irM"/>
                         <viewControllerLayoutGuide type="bottom" id="c11-7h-QxS"/>
@@ -800,7 +835,7 @@ VI. Torero notificará por medio de esta aplicación cualquier cambio realizad
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Tu pago fue realizado con exito! Enseguida un representante de torero presentara tu amparo ante la autoridad competente." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HEf-Tf-vlV">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Tu pago fue realizado con éxito! Enseguida un representante de Toreado presentará tu amparo ante la autoridad competente." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HEf-Tf-vlV">
                                 <rect key="frame" x="141" y="102" width="319" height="332"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

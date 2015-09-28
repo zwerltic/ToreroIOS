@@ -29,9 +29,9 @@ class ConfirmarViewController: UIViewController {
         nameLabel.text       = "Nombre     :   " + nameSaved
         lastLabel.text       = "Apellido   :   " + lastSaved
         streetLabel.text     = "Calle      :   " + streetSaved
-        numberLabel.text     = "Numero     :   " + numberSaved
+        numberLabel.text     = "Número     :   " + numberSaved
         coloniaLabel.text    = "Colonia    :   " + coloniaSaved
-        delegacionLabel.text = "Delegacion :   " + delegacionSaved
+        delegacionLabel.text = "Delegación :   " + delegacionSaved
         juzgadoLabel.text    = "Juzgado    :   " + juzgadoSaved
         itinerantLabel.text  = "Itinerante :   " + itineranteSaved
         nameSaved = "&name=" + nameSaved

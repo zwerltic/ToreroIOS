@@ -53,7 +53,7 @@
 		823CB9961BA3B8CE00A54990 /* rsz_pantalla2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rsz_pantalla2.png; path = ../../../../Downloads/rsz_pantalla2.png; sourceTree = "<group>"; };
 		823CB9981BA3B8D800A54990 /* rsz_1pantalla1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rsz_1pantalla1.png; path = ../../../../Downloads/rsz_1pantalla1.png; sourceTree = "<group>"; };
 		82431AAC1BA65EDE0014E987 /* GraciasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraciasViewController.swift; sourceTree = "<group>"; };
-		82A983811B75A6DF00A2D028 /* Torero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A983811B75A6DF00A2D028 /* Toreado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toreado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A983851B75A6DF00A2D028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82A983861B75A6DF00A2D028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A983881B75A6DF00A2D028 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		82A9838D1B75A6DF00A2D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82A9838F1B75A6DF00A2D028 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		82A983921B75A6DF00A2D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		82A983981B75A6DF00A2D028 /* ToreroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToreroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A983981B75A6DF00A2D028 /* Toreado.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Toreado.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A9839D1B75A6DF00A2D028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82A9839E1B75A6DF00A2D028 /* ToreroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToreroTests.swift; sourceTree = "<group>"; };
 		82A983A81B75F50800A2D028 /* SolicitaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitaViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				823CB9941BA3B3C400A54990 /* libDeviceCollectorLibrary.a */,
 				823CB98C1BA3B06D00A54990 /* Connection.swift */,
 				823CB98D1BA3B06D00A54990 /* Token.swift */,
-				82A983831B75A6DF00A2D028 /* Torero */,
+				82A983831B75A6DF00A2D028 /* Toreado */,
 				82A9839B1B75A6DF00A2D028 /* ToreroTests */,
 				82A983821B75A6DF00A2D028 /* Products */,
 			);
@@ -108,13 +108,13 @@
 		82A983821B75A6DF00A2D028 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				82A983811B75A6DF00A2D028 /* Torero.app */,
-				82A983981B75A6DF00A2D028 /* ToreroTests.xctest */,
+				82A983811B75A6DF00A2D028 /* Toreado.app */,
+				82A983981B75A6DF00A2D028 /* Toreado.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		82A983831B75A6DF00A2D028 /* Torero */ = {
+		82A983831B75A6DF00A2D028 /* Toreado */ = {
 			isa = PBXGroup;
 			children = (
 				82A983861B75A6DF00A2D028 /* AppDelegate.swift */,
@@ -130,6 +130,7 @@
 				82A983911B75A6DF00A2D028 /* LaunchScreen.xib */,
 				82A983841B75A6DF00A2D028 /* Supporting Files */,
 			);
+			name = Toreado;
 			path = Torero;
 			sourceTree = "<group>";
 		};
@@ -165,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		82A983801B75A6DF00A2D028 /* Torero */ = {
+		82A983801B75A6DF00A2D028 /* Toreado */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82A983A21B75A6DF00A2D028 /* Build configuration list for PBXNativeTarget "Torero" */;
+			buildConfigurationList = 82A983A21B75A6DF00A2D028 /* Build configuration list for PBXNativeTarget "Toreado" */;
 			buildPhases = (
 				82A9837D1B75A6DF00A2D028 /* Sources */,
 				82A9837E1B75A6DF00A2D028 /* Frameworks */,
@@ -177,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = Torero;
+			name = Toreado;
 			productName = Torero;
-			productReference = 82A983811B75A6DF00A2D028 /* Torero.app */;
+			productReference = 82A983811B75A6DF00A2D028 /* Toreado.app */;
 			productType = "com.apple.product-type.application";
 		};
-		82A983971B75A6DF00A2D028 /* ToreroTests */ = {
+		82A983971B75A6DF00A2D028 /* ToreadoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82A983A51B75A6DF00A2D028 /* Build configuration list for PBXNativeTarget "ToreroTests" */;
+			buildConfigurationList = 82A983A51B75A6DF00A2D028 /* Build configuration list for PBXNativeTarget "ToreadoTests" */;
 			buildPhases = (
 				82A983941B75A6DF00A2D028 /* Sources */,
 				82A983951B75A6DF00A2D028 /* Frameworks */,
@@ -195,9 +196,9 @@
 			dependencies = (
 				82A9839A1B75A6DF00A2D028 /* PBXTargetDependency */,
 			);
-			name = ToreroTests;
+			name = ToreadoTests;
 			productName = ToreroTests;
-			productReference = 82A983981B75A6DF00A2D028 /* ToreroTests.xctest */;
+			productReference = 82A983981B75A6DF00A2D028 /* Toreado.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 82A9837C1B75A6DF00A2D028 /* Build configuration list for PBXProject "Torero" */;
+			buildConfigurationList = 82A9837C1B75A6DF00A2D028 /* Build configuration list for PBXProject "Toreado" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -233,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				82A983801B75A6DF00A2D028 /* Torero */,
-				82A983971B75A6DF00A2D028 /* ToreroTests */,
+				82A983801B75A6DF00A2D028 /* Toreado */,
+				82A983971B75A6DF00A2D028 /* ToreadoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,7 +297,7 @@
 /* Begin PBXTargetDependency section */
 		82A9839A1B75A6DF00A2D028 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 82A983801B75A6DF00A2D028 /* Torero */;
+			target = 82A983801B75A6DF00A2D028 /* Toreado */;
 			targetProxy = 82A983991B75A6DF00A2D028 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -361,7 +362,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abogadoDigital.Toreado;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -400,6 +402,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abogadoDigital.Toreado;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -417,7 +421,7 @@
 					"/Users/jose/Downloads/conekta-ios-master/Conekta-SDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abogadoDigital.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Toreado;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jose/Downloads/conekta-ios-master/Conekta-SDK/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -435,7 +439,7 @@
 					"/Users/jose/Downloads/conekta-ios-master/Conekta-SDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abogadoDigital.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Toreado;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jose/Downloads/conekta-ios-master/Conekta-SDK/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -456,8 +460,8 @@
 				INFOPLIST_FILE = ToreroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.toreo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Torero.app/Torero";
+				PRODUCT_NAME = Toreado;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toreado.app/Toreado";
 			};
 			name = Debug;
 		};
@@ -472,15 +476,15 @@
 				INFOPLIST_FILE = ToreroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.toreo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Torero.app/Torero";
+				PRODUCT_NAME = Toreado;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toreado.app/Toreado";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		82A9837C1B75A6DF00A2D028 /* Build configuration list for PBXProject "Torero" */ = {
+		82A9837C1B75A6DF00A2D028 /* Build configuration list for PBXProject "Toreado" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82A983A01B75A6DF00A2D028 /* Debug */,
@@ -489,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82A983A21B75A6DF00A2D028 /* Build configuration list for PBXNativeTarget "Torero" */ = {
+		82A983A21B75A6DF00A2D028 /* Build configuration list for PBXNativeTarget "Toreado" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82A983A31B75A6DF00A2D028 /* Debug */,
@@ -498,7 +502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82A983A51B75A6DF00A2D028 /* Build configuration list for PBXNativeTarget "ToreroTests" */ = {
+		82A983A51B75A6DF00A2D028 /* Build configuration list for PBXNativeTarget "ToreadoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82A983A61B75A6DF00A2D028 /* Debug */,
